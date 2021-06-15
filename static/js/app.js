@@ -30,9 +30,30 @@ button.on("click", function() {
     // group body content
     tbody.html("");
 
-    // retrieve date input, output to console
+    // select input element and get raw HTML code,
+    // get value property of input element,
+    // print to console
     var inputElement = d3.select("#datetime");
     var inputValue = inputElement.property("value");
     console.log(inputValue);
+
+    //filter data, loop over array elements and test if values of datetime equal inputValue
+    let inputDate = [];
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].datetime == inputValue) {
+        inputDate.push(data[i]);
+      }
+    }
+    console.log(inputDate);
+
+    // write data to the console
+    inputDate.forEach(function(selections) {
+    console.log(selections);
+
+    // append table row (array) to table body
+    var row = tbody.append("tr");
+
+    
+
 
 
