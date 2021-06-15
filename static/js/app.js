@@ -17,7 +17,7 @@ data.forEach(function(ufoReport) {
     console.log(key, value);
 
     // Append a cell to the row for each value
-    // in the weather report object
+    // in the ufoReport report object
     var cell = row.append("td");
     cell.text(value);
   });
@@ -26,6 +26,13 @@ data.forEach(function(ufoReport) {
 // filter button
 var button = d3.select("#filter-btn");
 button.on("click", function() {
+    
+    // group body content
+    tbody.html("");
 
+    // retrieve date input, output to console
+    var inputElement = d3.select("#datetime");
+    var inputValue = inputElement.property("value");
+    console.log(inputValue);
 
 
