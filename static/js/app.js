@@ -53,7 +53,9 @@ button.on("click", function() {
     // append table row (array) to table body
     var row = tbody.append("tr");
 
-    
+   // return array, write to web console
+    Object.entries(selections).forEach(function([key, value]) {
+    console.log(key, value);
 
 
 
