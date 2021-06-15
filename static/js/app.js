@@ -57,5 +57,11 @@ button.on("click", function() {
     Object.entries(selections).forEach(function([key, value]) {
     console.log(key, value);
 
-
+       // append cell value to row
+       var cell = row.append("td");
+       cell.text(value);
+   });
+});
+});
+    
 
