@@ -8,9 +8,14 @@ console.log(data);
 // UFO report values (Datetime, City, State, Country, Shape, Duration, Comments)
 data.forEach(function(ufoReport) {
   console.log(ufoReport);
+
+  //append row (array) to table body
   var row = tbody.append("tr");
+
+  //return Array, output to web console
   Object.entries(ufoReport).forEach(function([key, value]) {
     console.log(key, value);
+
     // Append a cell to the row for each value
     // in the weather report object
     var cell = row.append("td");
@@ -18,26 +23,9 @@ data.forEach(function(ufoReport) {
   });
 });
 
-// filterTable(data);
-function myFunction() {
-  // Declare variables
-  var input, filter, table, tr, td, i, txtValue;
-  input = data.getElementById("form-control");
-  filter = input.value.toUpperCase();
-  table = data.getElementById("ufo-table");
-  tr = table.getElementsByTagName("tr");
+// filter button
+var button = d3.select("#filter-btn");
+button.on("click", function() {
 
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
+
 
