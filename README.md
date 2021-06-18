@@ -36,7 +36,7 @@ loadHTML(data);
 2. I used [.addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) to handle a change everytime a key is released.
 3. Log the released keyboard key's value in the console and pass that value to a const called searchString.
 4. Return searchString value [.toLowerCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase).
-5. I then .[filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase) each value in the data set that [.includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) any values present in the searchString.
+5. I then .[filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)(match) each value in the data set that [.includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) any values present in the searchString.
 6.  After this process runs i pass the results back into the first function i wrote, which then appends that filtered data to the table.
  ```javascript
 var searchBar = document.getElementById("search-input");
