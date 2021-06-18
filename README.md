@@ -52,4 +52,4 @@ searchBar.addEventListener("keyup", (e) => {
   loadHTML(displayResult);
 });
 ```
-
+By Travbz
