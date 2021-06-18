@@ -5,9 +5,9 @@
 ## Technologies Used;
 ---------------------
 
-1.Visual Studio Code
+1. Visual Studio Code
 
-2.Javascript
+2. Javascript
 
 ### Task
 Append data to an HTML table and create a filter feature
