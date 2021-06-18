@@ -11,9 +11,7 @@ function loadHTML(loadTableData) {
       });
   });
 };
-
 loadHTML(data);
-
 var searchBar = document.getElementById("search-input");
 searchBar.addEventListener("keyup", (e) => {
   var tbody2 = d3.select("tbody");
