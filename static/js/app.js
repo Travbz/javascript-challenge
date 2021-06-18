@@ -1,11 +1,8 @@
 function loadHTML(loadTableData) {
   var tbody = d3.select("tbody");
-  console.log(loadTableData);
   loadTableData.forEach(function(ufoObject) {
-      console.log(ufoObject);
       var row = tbody.append("tr");
       Object.entries(ufoObject).forEach(function([key, value]) {
-          console.log(key, value);
           var cell = row.append("td");
           cell.text(value);
       });
