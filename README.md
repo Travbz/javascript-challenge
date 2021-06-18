@@ -1,5 +1,6 @@
 # JavaScript-Challenge UFO Report Table!
-========================================
+
+
 
 ## Technologies Used;
 ---------------------
