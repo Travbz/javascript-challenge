@@ -10,7 +10,7 @@
 2. Javascript
 
 ### Task
-Append data to an HTML table and create a filter feature
+Append data to an existing HTML table and add search bar filter functionality. 
 ### Processes involved
 
 1. Build a function to load data array to an existing html table using [d3.select](https://www.geeksforgeeks.org/d3-js-d3-select-function/) to get a reference to the table body, looping through the array's keys and values using [.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries), then appending them to the table rows/cells.
