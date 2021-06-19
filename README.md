@@ -10,7 +10,10 @@
 2. Javascript
 
 ### Task
-Append data to an HTML table and add search bar filter functionality. 
+Append data to an HTML table and add search bar filter functionality.  My searchbar automatically appends search results that match the search string to the data table. Just start typing in the search bar and my app does the rest.
+
+
+### Processes involved
 ### Processes involved
 
 1. Build a function to load data array to an existing html table structure.
