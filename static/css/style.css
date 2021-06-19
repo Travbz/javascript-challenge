@@ -168,7 +168,7 @@ select {
     height: 1px;
     margin-top: 20px;
     content: " ";
-    background: aliceblue;
+    background: rgb(88, 92, 95);
   }
 
   #table-area td {
